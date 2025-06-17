@@ -48,7 +48,7 @@ const Contact = () => {
     setLoading(true);
     setStatus('');
     try {
-      const res = await fetch('https://formspree.io/f/xdoqzqzq', {
+      const res = await fetch('https://formspree.io/f/xgvyzowg', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
