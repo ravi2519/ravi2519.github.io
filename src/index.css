@@ -98,3 +98,102 @@ main {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+  .burger-menu {
+    display: block !important;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 20;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .nav-links {
+    display: none !important;
+    width: 100%;
+  }
+  .nav-links.open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--nav-bg);
+    z-index: 10;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0.5rem;
+  }
+  .nav-links a, .nav-links button {
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: left;
+  }
+  nav a, nav button {
+    margin: 0.3rem 0.5rem 0.3rem 0;
+    font-size: 1rem;
+  }
+  main {
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 1rem !important;
+  }
+  .card {
+    padding: 1em;
+  }
+  .logo {
+    height: 3em;
+    padding: 0.5em;
+  }
+}
+
+@media (min-width: 701px) {
+  .burger-menu {
+    display: none !important;
+  }
+  .nav-links {
+    display: flex !important;
+    align-items: center;
+    flex-wrap: wrap;
+    position: static;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.3rem 0.5rem;
+  }
+  nav a, nav button {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.5rem;
+  }
+  main {
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  section {
+    padding: 0.5rem !important;
+  }
+}

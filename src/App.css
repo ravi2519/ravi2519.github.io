@@ -40,3 +40,62 @@
 .read-the-docs {
   color: #888;
 }
+
+.cv-experience-card {
+  border: 1px solid var(--nav-border);
+  border-radius: 10px;
+  background: var(--nav-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), border-color 0.3s, background 0.3s;
+  cursor: pointer;
+}
+.cv-experience-card:hover, .cv-experience-card:focus {
+  border-color: var(--primary);
+  box-shadow: 0 6px 24px rgba(45,108,223,0.12), 0 1.5px 6px rgba(45,108,223,0.10);
+  background: rgba(45,108,223,0.06);
+}
+.cv-experience-card ul {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+  padding-left: 1.2em;
+}
+.cv-experience-card .cv-job-title {
+  font-weight: 600;
+  font-size: 1.08rem;
+}
+.cv-experience-card .cv-job-dates {
+  font-size: 0.98rem;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.cv-skills-card, .cv-awards-card {
+  border: 1px solid var(--nav-border);
+  border-radius: 10px;
+  background: var(--nav-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), border-color 0.3s, background 0.3s;
+  cursor: pointer;
+}
+.cv-skills-card:hover, .cv-skills-card:focus,
+.cv-awards-card:hover, .cv-awards-card:focus {
+  border-color: var(--primary);
+  box-shadow: 0 6px 24px rgba(45,108,223,0.12), 0 1.5px 6px rgba(45,108,223,0.10);
+  background: rgba(45,108,223,0.06);
+}
+.cv-skills-card ul, .cv-awards-card ul {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 1.05rem;
+}
+
+.cv-skill-category {
+  font-weight: 600;
+  font-size: 1.07rem;
+  color: var(--primary);
+  margin-right: 0.5em;
+}
