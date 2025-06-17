@@ -132,7 +132,7 @@ const Books = () => {
         }));
         setBooks(booksData);
       } catch (err) {
-        setError('Could not load books from Goodreads.');
+        setError('Could not load books from Goodreads. Instead check my Goodreads profile: <a href="https://www.goodreads.com/user/show/13048149-ravi-ranjan" target="_blank" rel="noopener noreferrer">My Goodreads Profile</a>');
       }
       setLoading(false);
     }
